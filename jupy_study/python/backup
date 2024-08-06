@@ -1,0 +1,510 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "e7dfa840",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# List is a collection which is ordered and changeable. Allows duplicate members.\n",
+    "l1 = [1,2,3,4]\n",
+    "print (l1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "88865398",
+   "metadata": {},
+   "source": [
+    "# List Duplicates"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "b590a858",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 2, 3, 4]"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1 = [1,2,2,3,4]\n",
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7d8c5953",
+   "metadata": {},
+   "source": [
+    "# List Length"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "5add5c9d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [1,2,3,4]\n",
+    "print(len(l1))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "669e3100",
+   "metadata": {},
+   "source": [
+    "# List items-Data types"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "693f16c9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'list'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [1,2,3,4]\n",
+    "l2 = [\"dog\",\"cat\",\"pig\"]\n",
+    "l3 = [True,False,False]\n",
+    "# list can contain different Datatypes\n",
+    "l1 = [\"dog\",12,True,20,\"male\"]\n",
+    "\n",
+    "type(l1)\n",
+    "print(type(l1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "7ecfed3b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['apple', 'cat', 'hello']"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\",\"cat\",\"gif\"]\n",
+    "l1[2] = \"hello\"\n",
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "aa06e3ff",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['apple', 'plinko', 'MINES', 'orange', 'kiwi', 'mango']"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\",\"banana\",\"cherry\",\"orange\",\"kiwi\",\"mango\"]\n",
+    "l1[1:3] = [\"plinko\",\"MINES\"]\n",
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "87871011",
+   "metadata": {},
+   "source": [
+    "# Insert Items"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "3a8d52b1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['apple', 'banana', 'pop', 'mango']"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\",\"banana\",\"mango\"]\n",
+    "l1.insert(2,\"pop\")\n",
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "af87b001",
+   "metadata": {},
+   "source": [
+    "# Append Items "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "8d0d4f8d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['apple', 'banana', 'mango', 'orange']"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\",\"banana\",\"mango\"]\n",
+    "l1.append(\"orange\")\n",
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "371e895f",
+   "metadata": {},
+   "source": [
+    "# Extend Items"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "30a5f05d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['apple', 'banana', 'mango', 'pineapple', 'orange', 'dragonfruit']"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\",\"banana\",\"mango\"]\n",
+    "l2 = [\"pineapple\",\"orange\",\"dragonfruit\"]\n",
+    "l1.extend(l2)\n",
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e2f6e3d7",
+   "metadata": {},
+   "source": [
+    "# Add Any Iterable\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "6392b979",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['apple', 'banana', 'cherry', 'kiwi', 'orange']\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\", \"banana\", \"cherry\"]\n",
+    "l2 = (\"kiwi\", \"orange\")\n",
+    "l1.extend(l2)\n",
+    "print(l1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8bbb98d2",
+   "metadata": {},
+   "source": [
+    "# #Remove Specified Item"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "f1920e27",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['apple', 'cherry']\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\", \"banana\", \"cherry\"]\n",
+    "l1.remove(\"banana\")\n",
+    "print(l1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "33df48d0",
+   "metadata": {},
+   "source": [
+    "# POP"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "1f4cf590",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['apple', 'cherry']\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\", \"banana\", \"cherry\"]\n",
+    "l1.pop(1)\n",
+    "print(l1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f86680d3",
+   "metadata": {},
+   "source": [
+    "# Del"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "79273bb4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['banana', 'cherry']\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\", \"banana\", \"cherry\"]\n",
+    "del l1[0]\n",
+    "print(l1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "794e3e74",
+   "metadata": {},
+   "source": [
+    "# clear"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "999aacac",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[]\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\", \"banana\", \"cherry\"]\n",
+    "l1.clear()\n",
+    "print(l1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7af16826",
+   "metadata": {},
+   "source": [
+    "# Loop through a list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "5bed01a4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "apple\n",
+      "banana\n",
+      "cherry\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\", \"banana\", \"cherry\"]\n",
+    "for x in l1:\n",
+    "  print(x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e8a45ba0",
+   "metadata": {},
+   "source": [
+    "# using range and len"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "f8429d78",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "apple\n",
+      "banana\n",
+      "cherry\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [\"apple\", \"banana\", \"cherry\"]\n",
+    "for i in range(len(l1)):\n",
+    "  print(l1[i])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "e44063fb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "apple\n",
+      "banana\n",
+      "cherry\n"
+     ]
+    }
+   ],
+   "source": [
+    "#While Loop\n",
+    "\n",
+    "thislist = [\"apple\", \"banana\", \"cherry\"]\n",
+    "i = 0\n",
+    "while i < len(thislist):\n",
+    "  print(thislist[i])\n",
+    "  i = i + 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b604aed4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
